@@ -1,9 +1,9 @@
-# Próxima iteración
+# Iteración de publicación
 
-- [ ] Añadir selector persistente de tema claro y oscuro.
-- [ ] Añadir checklist interactivo de instalación con progreso y reinicio.
-- [ ] Crear página/sección de referencia API con endpoints, flujo y ejemplos prácticos.
-- [ ] Aumentar tamaños de texto generales y hacer visible «Guía para MoneyPrinterTurbo».
-- [ ] Revisar responsive en celular, tablet y desktop.
-- [ ] Validar interacciones, compilación y enlaces.
-- [ ] Guardar checkpoint y entregar la actualización.
+- [ ] Añadir ejemplos de respuestas JSON y códigos HTTP a la referencia API.
+- [ ] Incorporar detección de sistema operativo para recomendar la instalación adecuada.
+- [ ] Añadir historial local de videos generados y estados de automatización.
+- [ ] Verificar desktop, tablet y móvil, incluida la ruta /api.
+- [ ] Validar el repositorio GitHub conectado y su estado remoto.
+- [ ] Subir el repositorio actualizado a juanxaviercasa/money-printer-turbo.git.
+- [ ] Guardar checkpoint final y entregar enlaces.
