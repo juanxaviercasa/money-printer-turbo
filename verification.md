@@ -27,3 +27,7 @@ Se confirmó que el nombre visible de la guía ahora es **VideoForge Manual**, c
 La página `/api` se comprobó en desktop y móvil. La referencia incluye índice, endpoints de creación y consulta, estados del trabajo, ejemplos en curl y JavaScript del lado servidor, Swagger/ReDoc, seguridad y variables de entorno. En móvil, la navegación de la API se reorganiza horizontalmente y los bloques de código conservan desplazamiento sin romper la lectura.
 
 El manual principal mantiene su composición responsive y ahora muestra el selector de tema en cabecera móvil y barra lateral. La tipografía del hero y del cuerpo se amplió; el subtítulo «GUÍA PARA MONEYPRINTERTURBO» quedó visible con tamaño editorial. `pnpm run check` y `pnpm run build` finalizaron correctamente.
+
+## Verificación de la tercera iteración
+
+El checklist aparece dentro de Instalación con progreso `0/5`, casillas accesibles, estado tachado al completar y botón de reinicio. La selección se guarda en `localStorage` del navegador para continuar más tarde en el mismo dispositivo. El selector claro/oscuro se muestra en el manual y en `/api`; la referencia API mantiene ejemplos copiables y enlaces a Swagger/ReDoc. Se revisaron las rutas en desktop de 1280 px y móvil de 390 px. El contenido ampliado sigue siendo legible y las tarjetas se apilan correctamente.
