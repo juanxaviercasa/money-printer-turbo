@@ -2,6 +2,7 @@
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import ThemeToggle from "@/components/ThemeToggle";
 import {
   ArrowUpRight, Check, ChevronRight, CircleHelp, Clipboard, Cloud,
   Code2, Cpu, ExternalLink, FileCode2, Github, Menu, Monitor,
@@ -60,11 +61,11 @@ export default function Home() {
   return <div className="app-shell">
     <header className="mobile-header">
       <a className="brand" href="#inicio" onClick={() => goTo("inicio")}><img src="/manus-storage/mpt-mark_185d043a.png" alt="" /><span>VideoForge<span>Manual</span></span></a>
-      <button className="mobile-menu" onClick={() => setMobileNav(!mobileNav)} aria-label="Abrir navegación">{mobileNav ? <X /> : <Menu />}</button>
+      <ThemeToggle /><button className="mobile-menu" onClick={() => setMobileNav(!mobileNav)} aria-label="Abrir navegación">{mobileNav ? <X /> : <Menu />}</button>
     </header>
     <aside className={mobileNav ? "sidebar open" : "sidebar"}>
       <div className="sidebar-top"><a className="brand" href="#inicio" onClick={() => goTo("inicio")}><img src="/manus-storage/mpt-mark_185d043a.png" alt="" /><span>VideoForge<span>Manual</span></span></a><span className="version">MANUAL · ES</span></div>
-      <div className="search-box"><Search size={16} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Buscar todo el manual" aria-label="Buscar sección" /></div>
+      <div className="sidebar-tools"><ThemeToggle /><a className="api-nav-link" href="/api">Referencia API <ArrowUpRight size={13} /></a></div><div className="search-box"><Search size={16} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Buscar todo el manual" aria-label="Buscar sección" /></div>
       {query && <div className="search-results"><span>Coincidencias</span>{filtered.length ? filtered.slice(0, 5).map(({ id, label }) => <button key={`result-${id}`} onClick={() => goTo(id)}>{label}<ChevronRight size={13} /></button>) : <small>Sin coincidencias. Prueba «API», «Docker» o «cron».</small>}</div>}<nav className="side-nav" aria-label="Navegación del manual">{filtered.map(({ id, label, icon: Icon }) => <button key={id} className={active === id ? "nav-item active" : "nav-item"} onClick={() => goTo(id)}><Icon size={16} /><span>{label}</span>{active === id && <ChevronRight size={15} />}</button>)}</nav>
       <div className="sidebar-bottom"><div className="status-dot"><span /> Guía basada en el repositorio oficial</div><a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noreferrer">Ver en GitHub <ExternalLink size={13} /></a></div>
     </aside>

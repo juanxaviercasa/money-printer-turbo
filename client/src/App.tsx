@@ -5,11 +5,13 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import ApiReference from "./pages/ApiReference";
 import NotFound from "./pages/NotFound";
 
 function Router() {
   return <Switch>
     <Route path="/" component={Home} />
+    <Route path="/api" component={ApiReference} />
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />
   </Switch>;
@@ -17,7 +19,7 @@ function Router() {
 
 export default function App() {
   return <ErrorBoundary>
-    <ThemeProvider defaultTheme="light">
+    <ThemeProvider defaultTheme="light" switchable>
       <TooltipProvider>
         <Toaster position="bottom-right" />
         <Router />

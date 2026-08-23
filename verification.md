@@ -21,3 +21,9 @@ Se añadió una identidad más propia mediante el lockup del hero y el símbolo 
 Se revisaron tres tamaños: desktop de 1280 px, tablet de 820 px y móvil de 390 px. En desktop se mantienen sidebar, hero, pipeline y las nuevas secciones de proveedores y automatización en composición editorial. En tablet, el contenido intermedio colapsa proveedores y automatización a una columna sin desbordamiento; la navegación lateral sigue visible. En móvil, la cabecera y el menú colapsable se mantienen, las tarjetas se apilan y el rail de automatización se vuelve vertical. El nuevo buscador muestra coincidencias por sección y palabras clave como API, Docker y cron.
 
 Se confirmó que el nombre visible de la guía ahora es **VideoForge Manual**, con la aclaración de que documenta MoneyPrinterTurbo. `pnpm run check` y `pnpm run build` pasan correctamente. Las advertencias del build corresponden a la ruta gestionada del hero y al tamaño de chunk, no a errores funcionales.
+
+## Verificación de esta iteración
+
+La página `/api` se comprobó en desktop y móvil. La referencia incluye índice, endpoints de creación y consulta, estados del trabajo, ejemplos en curl y JavaScript del lado servidor, Swagger/ReDoc, seguridad y variables de entorno. En móvil, la navegación de la API se reorganiza horizontalmente y los bloques de código conservan desplazamiento sin romper la lectura.
+
+El manual principal mantiene su composición responsive y ahora muestra el selector de tema en cabecera móvil y barra lateral. La tipografía del hero y del cuerpo se amplió; el subtítulo «GUÍA PARA MONEYPRINTERTURBO» quedó visible con tamaño editorial. `pnpm run check` y `pnpm run build` finalizaron correctamente.
