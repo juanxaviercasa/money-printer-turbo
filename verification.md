@@ -15,3 +15,9 @@ La página se adapta a una columna de lectura y mantiene los contrastes entre su
 ## Decisiones aplicadas desde la revisión
 
 Se añadió una identidad más propia mediante el lockup del hero y el símbolo recurrente. Se añadió un pipeline visual prompt-a-render con nodos numerados. Se cambió la combinación tipográfica a Space Grotesk, DM Sans y JetBrains Mono. Se oscureció la tarjeta de voz y subtítulos para evitar que el centro de la página fuese demasiado neutro. Se documentaron las decisiones en `ideas.md`.
+
+## Verificación de la segunda iteración
+
+Se revisaron tres tamaños: desktop de 1280 px, tablet de 820 px y móvil de 390 px. En desktop se mantienen sidebar, hero, pipeline y las nuevas secciones de proveedores y automatización en composición editorial. En tablet, el contenido intermedio colapsa proveedores y automatización a una columna sin desbordamiento; la navegación lateral sigue visible. En móvil, la cabecera y el menú colapsable se mantienen, las tarjetas se apilan y el rail de automatización se vuelve vertical. El nuevo buscador muestra coincidencias por sección y palabras clave como API, Docker y cron.
+
+Se confirmó que el nombre visible de la guía ahora es **VideoForge Manual**, con la aclaración de que documenta MoneyPrinterTurbo. `pnpm run check` y `pnpm run build` pasan correctamente. Las advertencias del build corresponden a la ruta gestionada del hero y al tamaño de chunk, no a errores funcionales.

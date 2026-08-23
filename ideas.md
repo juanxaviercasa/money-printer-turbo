@@ -22,3 +22,7 @@ El manual habla de forma directa, práctica y empoderadora. Titulares como «De 
 ### Motivo recurrente
 
 El pipeline de cuatro nodos —prompt, guion, montaje y export— funciona como hilo visual del sitio, conectando la identidad de MoneyPrinterTurbo con su principal promesa de producto: convertir una idea en una pieza audiovisual.
+
+## Naming Decision
+
+El sitio se llama **VideoForge Manual**. No es un fork ni una rebrandización del software: es una guía independiente para aprender a instalar y usar MoneyPrinterTurbo. La relación se expresa como subtítulo contextual —«Guía para MoneyPrinterTurbo»— y mediante enlaces al repositorio oficial. El nombre evita confusión con la identidad y el nombre propio del proyecto documentado.
